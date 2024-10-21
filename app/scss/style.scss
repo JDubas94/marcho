@@ -185,8 +185,9 @@ footer {
         vertical-align: middle;
     }
 }
-.top{
-    &__container{
+
+.top {
+    &__container {
         max-width: 1700px;
         margin: 0 auto;
         background-repeat: no-repeat;
@@ -669,7 +670,8 @@ footer {
         display: flex;
         justify-content: space-between;
         position: relative;
-        &::after{
+
+        &::after {
             content: "";
             position: absolute;
             right: -20px;
@@ -754,7 +756,7 @@ footer {
     &__item-link {
         position: relative;
         transition: all .3s;
-}
+    }
 
     &__item-link::after {
         content: '';
@@ -770,30 +772,35 @@ footer {
 
 }
 
-.modal{
+.modal {
     padding-top: 100px;
     max-width: 570px;
     margin: 0 auto 115px;
-    &__links{
+
+    &__links {
         text-align: center;
         margin-bottom: 40px;
     }
-    &__link{
+
+    &__link {
         color: #909090;
         font-size: 22px;
         @extend %roboto-400;
         text-transform: uppercase;
         margin: 0 30px;
     }
-    &__link--active{
+
+    &__link--active {
         color: $accent;
         @extend %roboto-700;
     }
-    &__label{
+
+    &__label {
         margin-bottom: 30px;
         display: block;
     }
-    &__input{
+
+    &__input {
         display: block;
         width: 100%;
         border: none;
@@ -802,7 +809,8 @@ footer {
         height: 60px;
         padding: 0 15px;
     }
-    &__btn{
+
+    &__btn {
         display: block;
         background-color: $title;
         text-transform: uppercase;
@@ -814,14 +822,49 @@ footer {
         cursor: pointer;
         margin-bottom: 12px;
     }
-    &__error{
+
+    &__error {
         color: $accent;
         display: inline-block;
     }
-    &__text{
+
+    &__text {
         margin-bottom: 25px;
     }
-    
+
+}
+
+.page-404 {
+
+    padding: 110px 0 120px;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__content{
+        max-width: 570px;
+        width: 100%;
+    }
+    &__title{
+        color: #28384f;
+        margin-bottom: 40px;
+        @extend %roboto-700;
+        font-size: 48px;
+    }
+    &__text{
+        margin-bottom: 55px;
+        max-width: 470px;
+    }
+    &__link{
+        background-color: $accent;
+        text-transform: uppercase;
+        color: #fff;
+        padding: 14px 35px;
+        @extend %roboto-400;
+        box-shadow: 0px 5px 25px 0px rgba(254, 62, 87, 0.35);
+    }
 }
 
 
