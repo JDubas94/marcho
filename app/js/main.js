@@ -5,7 +5,7 @@ $(function () {
     infinite: false,
   });
 
-  $('.product-tabs__top-item').on('click', function(e){
+  $('.product-tabs__top-item').on('click', function (e) {
     e.preventDefault();
     $('.product-tabs__top-item').removeClass('product-tabs__top-item--active');
     $(this).addClass('product-tabs__top-item--active');
@@ -29,16 +29,16 @@ $(function () {
     fade: true
   });
 
-  $('.shop-content__filter-btn').on('click', function(){
+  $('.shop-content__filter-btn').on('click', function () {
     $('.shop-content__filter-btn').removeClass('shop-content__filter-btn--active');
     $(this).addClass('shop-content__filter-btn--active');
   });
 
-  $('.button-list').on('click', function(){
+  $('.button-list').on('click', function () {
     $('.product-item').addClass('product-item--list');
   });
 
-  $('.button-grid').on('click', function(){
+  $('.button-grid').on('click', function () {
     $('.product-item').removeClass('product-item--list');
   });
 
@@ -47,7 +47,7 @@ $(function () {
   $('.filter-price__input').ionRangeSlider({
     type: "double",
     prefix: "$",
-    onStart: function (data){
+    onStart: function (data) {
       $('.filter-price__from').text(data.from);
       $('.filter-price__to').text(data.to);
     },
@@ -115,6 +115,7 @@ $(function () {
 
   const deadline = $('.promo__clock').attr('data-time');
   initializeClock('promo__clock', deadline);
+
 
 });
 Fancybox.bind("[data-fancybox]", {
